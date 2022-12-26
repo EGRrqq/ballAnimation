@@ -1,0 +1,11 @@
+{
+  "name": "ballAnimation",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "webpack --mode=development"
+  },
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
