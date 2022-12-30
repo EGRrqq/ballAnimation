@@ -1,4 +1,9 @@
-.container {
-    margin: 10px;
-    background-color: #CBEBEB;
+body {
+    margin: auto;
+}
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
 }

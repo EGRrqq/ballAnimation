@@ -1,23 +1,13 @@
-import React, { useState } from "react"
-import "./index.css"
+import React from "react"
+import { Canvas } from "@react-three/fiber"
+import Scene from "./Scene"
 
 const App = () => {
-    const [counter, setCounter] = useState(0)
-    const [values, setValues] = useState([])
-/*    const notes = useNotes(BACKEND_URL)*/
-
-    const handleClick = () => {
-        setCounter(counter + 1)
-        setValues(values.concat(counter))
-    }
 
     return (
-        <div className="container">
-            hello webpack {counter} clicks
-            <button onClick={handleClick}>
-                press
-            </button>
-        </div>
+        <Canvas>
+            <Scene />
+        </Canvas>
     )
 }
 

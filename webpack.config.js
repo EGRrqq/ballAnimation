@@ -1,12 +1,12 @@
 const path = require('path')
-const webpack = require('webpack')
+/*const webpack = require('webpack')*/
 
 const config = (env, argv) => {
     console.log('argv', argv.mode)
 
-    const backend_url = argv.mode === 'production'
+/*    const backend_url = argv.mode === 'production'
         ? 'https://obscure-harbor-49797.herokuapp.com/api/notes'
-        : 'http://localhost:3001/notes'
+        : 'http://localhost:3001/notes'*/
 
     return {
         entry: './src/index.js',
@@ -35,11 +35,11 @@ const config = (env, argv) => {
                 },
             ],
         },
-        plugins: [
+/*        plugins: [
             new webpack.DefinePlugin({
                 BACKEND_URL: JSON.stringify(backend_url)
             })
-        ]
+        ]*/
     }
 }
 
