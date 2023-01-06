@@ -1,12 +1,12 @@
 import React from "react"
 import { Canvas } from "@react-three/fiber"
-import Scene from "./Scene"
+import Text3DScene from "./components/Text3DScene"
 
 const App = () => {
 
     return (
         <Canvas>
-            <Scene />
+            <Text3DScene />
         </Canvas>
     )
 }
