@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber"
 import Text3DScene from "./components/Text3DScene"
 import PlanesScene from "./components/PlanesScene";
 import {Grid, OrbitControls, PerspectiveCamera} from "@react-three/drei";
+import BallScene from "./components/BallScene";
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
             <Suspense>
                 <Text3DScene />
                 <PlanesScene />
+                <BallScene />
             </Suspense>
 
             <Grid cellColor="white" args={[10, 10]} />
