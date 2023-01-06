@@ -1,12 +1,24 @@
-import React from "react"
+import React, { Suspense } from "react"
 import { Canvas } from "@react-three/fiber"
 import Text3DScene from "./components/Text3DScene"
+import PlanesScene from "./components/PlanesScene";
+import {Grid, OrbitControls, PerspectiveCamera} from "@react-three/drei";
 
 const App = () => {
 
     return (
         <Canvas>
-            <Text3DScene />
+            <OrbitControls makeDefault />
+            <PerspectiveCamera makeDefault fov={75} position={[0,1.5,5]}/>
+            <ambientLight />
+            <pointLight position={[10,10,0]}/>
+
+            <Suspense>
+                <Text3DScene />
+                <PlanesScene />
+            </Suspense>
+
+            <Grid cellColor="white" args={[10, 10]} />
         </Canvas>
     )
 }
